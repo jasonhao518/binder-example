@@ -1,5 +1,5 @@
-sudo curl -sSL -o /usr/local/bin/kubectl https://dl.k8s.io/release/v1.25.0/bin/linux/amd64/kubectl
-chmod +x /usr/local/bin/kubectl
+curl -sSL -o kubectl https://dl.k8s.io/release/v1.25.0/bin/linux/amd64/kubectl
+chmod +x ./kubectl
 https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash if
-sudo curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
-chmod +x /usr/local/bin/argocd
+curl -sSL -o argocd https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
+chmod +x ./argocd
