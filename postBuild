@@ -2,4 +2,4 @@ curl -sSL -o kubectl https://dl.k8s.io/release/v1.25.0/bin/linux/amd64/kubectl
 chmod +x ./kubectl
 curl -sSL -o argocd https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
 chmod +x ./argocd
-echo "export PATH=$PATH:/home/jovyan" >> /home/jovyan.bash_profile
+echo "export PATH=$PATH:/home/jovyan" >> /home/jovyan/.bash_profile
