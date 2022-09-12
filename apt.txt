@@ -2,4 +2,3 @@ ca-certificates
 curl
 apt-transport-https
 apt-utils
-sudo
