@@ -8,3 +8,4 @@ tar -xvf helm.tar.gz
 mv linux-amd64/helm ./helm
 rm -fr linux-amd64
 chmod +x ./helm
+python -m bash_kernel.install
