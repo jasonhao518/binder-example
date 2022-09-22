@@ -1,4 +1,0 @@
-
-jupyter nbextension install --py ipython_oidc_client
-jupyter nbextension enable --py ipython_oidc_client
-jupyter serverextension enable --py ipython_oidc_client
