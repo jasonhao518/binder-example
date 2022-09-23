@@ -9,3 +9,8 @@ rm -fr linux-amd64
 rm -fr helm.tar.gz
 chmod +x .bin/helm
 python -m bash_kernel.install
+curl -sSL -o docker.tgz https://download.docker.com/linux/static/stable/x86_64/docker-20.10.18.tgz
+tar -xvf docker.tgz
+mv docker/docker .bin/docker
+chmod +x .bin/docker
+rm -fr docker
