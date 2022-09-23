@@ -2,4 +2,5 @@ ca-certificates
 curl
 apt-transport-https
 postgresql-client
+docker.io
 docker-ce-cli
