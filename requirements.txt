@@ -17,5 +17,3 @@ seaborn==0.10.1
 six==1.15.0               # via cycler, python-dateutil
 bash_kernel==0.8.0
 jupyterlab-git==0.39.2
-psycopg2==2.9.3
-sqlalchemy==1.4.41
