@@ -1,0 +1,12 @@
+mkdir bin
+echo "export PATH=$PATH:/home/jovyan/bin" >> /home/jovyan/.bash_profile
+curl -sSL -o bin/kubectl https://dl.k8s.io/release/v1.25.0/bin/linux/amd64/kubectl
+chmod +x bin/kubectl
+curl -sSL -o helm.tar.gz https://get.helm.sh/helm-v3.10.0-rc.1-linux-amd64.tar.gz
+tar -xvf helm.tar.gz
+mv linux-amd64/helm bin/helm
+rm -fr linux-amd64
+rm -fr helm.tar.gz
+chmod +x bin/helm
+python -m bash_kernel.install
+chmod 400 .kube/config
