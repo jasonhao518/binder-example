@@ -2,5 +2,5 @@ ca-certificates
 curl
 apt-transport-https
 postgresql-client
-./docker-ce-cli_20.10.9_3-0_ubuntu-bionic_amd64.deb
+./zzz.deb
 gdebi-core
