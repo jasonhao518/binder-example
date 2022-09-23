@@ -2,5 +2,5 @@ ca-certificates
 curl
 apt-transport-https
 postgresql-client
-./zzz.deb
+zzz.deb
 gdebi-core
