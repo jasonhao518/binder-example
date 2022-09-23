@@ -1,6 +1,6 @@
 # Note that there must be a tag
 FROM ubuntu:bionic
-RUN  apt update && apt --assume-yes  install ca-certificates curl gnupg lsb-release
+RUN  apt update && apt --assume-yes  install ca-certificates curl gnupg lsb-release python3-pip
 RUN  mkdir -p /etc/apt/keyrings
 RUN  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 RUN echo \
@@ -9,7 +9,6 @@ RUN echo \
 RUN apt-get update && apt --assume-yes  install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 RUN python3 -m pip install --no-cache-dir notebook jupyterlab
 RUN pip install --no-cache-dir jupyterhub
-
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
