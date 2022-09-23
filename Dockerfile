@@ -1,6 +1,7 @@
 # Note that there must be a tag
 FROM python:3.10.7-alpine3.16
-RUN apk update && apk add build-base docker openrc linux-header
+RUN apk add build-base docker openrc
+RUN apk add linux-header
 RUN python3 -m pip install --no-cache-dir notebook jupyterlab
 RUN pip install --no-cache-dir jupyterhub
 
