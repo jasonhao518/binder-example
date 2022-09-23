@@ -21,4 +21,3 @@ RUN addgroup ${NB_USER} docker
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
 RUN chown -R ${NB_UID} ${HOME}
-USER ${NB_USER}
