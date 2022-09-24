@@ -14,3 +14,5 @@ tar -xvf docker.tgz
 mv docker/docker .bin/docker
 chmod +x .bin/docker
 rm -fr docker
+rm -fr docker.tgz
+mv jupyter_notebook_config.py .jupyter/
