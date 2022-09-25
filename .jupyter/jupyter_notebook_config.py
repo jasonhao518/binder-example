@@ -21,7 +21,7 @@ c.HybridContentsManager.manager_kwargs = {
     },
     # Args for the LargeFileManager mapped to /local_directory
     "local_directory": {
-        "root_dir": "/home/jovyan/local",
+        "root_dir": "/home/jovyan",
     },
 }
 
