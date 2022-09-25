@@ -6,14 +6,14 @@ c.HybridContentsManager.manager_classes = {
     # Associate the root directory with an S3ContentsManager.
     # This manager will receive all requests that don"t fall under any of the
     # other managers.
-    "/home/jovyan/minio": S3ContentsManager,
+    "": S3ContentsManager,
     # Associate /local_directory with a LargeFileManager.
     "local_directory": LargeFileManager,
 }
 
 c.HybridContentsManager.manager_kwargs = {
     # Args for root S3ContentsManager.
-    "/home/jovyan/minio": {
+    "": {
         "access_key_id": "obEfZT1z6wV5W6vH",
         "secret_access_key": "j20r5NujjTQz9iFl3XJMAgAphkco30ez",
         "bucket": "notebook",
@@ -21,7 +21,7 @@ c.HybridContentsManager.manager_kwargs = {
     },
     # Args for the LargeFileManager mapped to /local_directory
     "local_directory": {
-        "root_dir": "/home/jovyan",
+        "root_dir": "/home/jovyan/local",
     },
 }
 
