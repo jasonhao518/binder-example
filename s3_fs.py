@@ -125,7 +125,7 @@ class S3FS(GenericFS):
             self.mkdir("")
             self.ls("")
             self.isdir("")
-            self.fs.get("", "./", recursive=True)
+            self.fs.get("home", "./", recursive=True)
         except ClientError as ex:
             if "AccessDenied" in str(ex):
                 policy = SAMPLE_ACCESS_POLICY.format(
