@@ -147,7 +147,7 @@ class S3FS(GenericFS):
         self.log.debug("S3contents.S3FS.ls: Listing directory: `%s`", path_)
         files = self.fs.ls(path_, refresh=True)
         #return self.remove_prefix(files)
-        return os.listdir(path)
+        return os.listdir("./"+path)
     def isfile(self, path):
         path_ = self.path(path)
         # FileNotFoundError handled by s3fs
