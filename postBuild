@@ -16,3 +16,4 @@ chmod +x .bin/docker
 rm -fr docker
 rm -fr docker.tgz
 cp -f genericmanager.py /srv/conda/envs/notebook/lib/python3.8/site-packages/s3contents/genericmanager.py
+cp -f s3_fs.py /srv/conda/envs/notebook/lib/python3.8/site-packages/s3contents/s3_fs.py

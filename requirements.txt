@@ -20,4 +20,4 @@ jupyterlab-git==0.39.2
 s3contents==0.9.0
 #jupyterlab==3.4.6
 #jupyter_server==1.18.1
-hybridcontents==0.3.0
+#hybridcontents==0.3.0
