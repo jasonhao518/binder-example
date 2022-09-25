@@ -125,7 +125,7 @@ class S3FS(GenericFS):
             self.mkdir("")
             self.ls("")
             self.isdir("")
-            self.fs.get("./","")
+            self.fs.get("", "./", recursive=True)
         except ClientError as ex:
             if "AccessDenied" in str(ex):
                 policy = SAMPLE_ACCESS_POLICY.format(
@@ -146,8 +146,8 @@ class S3FS(GenericFS):
         path_ = self.path(path)
         self.log.debug("S3contents.S3FS.ls: Listing directory: `%s`", path_)
         files = self.fs.ls(path_, refresh=True)
-        #return self.remove_prefix(files)
-        return os.listdir("./"+path)
+        return self.remove_prefix(files)
+
     def isfile(self, path):
         path_ = self.path(path)
         # FileNotFoundError handled by s3fs
