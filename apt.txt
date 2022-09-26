@@ -2,3 +2,5 @@ ca-certificates
 curl
 apt-transport-https
 postgresql-client
+rclone
+docker
