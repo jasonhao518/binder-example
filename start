@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "hello"
 export REPO_DIR="/home/jovyan"
+export PWD="/home/jovyan"
 echo "export PATH=$PATH:/opt/bin" >> /home/jovyan/.bash_profile
 exec "$@"
