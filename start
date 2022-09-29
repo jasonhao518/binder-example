@@ -1,1 +1,2 @@
+#!/bin/sh
 echo "export PATH=$PATH:/opt/bin" >> /home/jovyan/.bash_profile
