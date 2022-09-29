@@ -1,17 +1,17 @@
-mkdir .bin
-echo "export PATH=$PATH:/home/jovyan/.bin" >> /home/jovyan/.bash_profile
+cd /opt
+mkdir bin
 curl -sSL -o .bin/kubectl https://dl.k8s.io/release/v1.25.0/bin/linux/amd64/kubectl
-chmod +x .bin/kubectl
+chmod +x bin/kubectl
 curl -sSL -o helm.tar.gz https://get.helm.sh/helm-v3.10.0-rc.1-linux-amd64.tar.gz
 tar -xvf helm.tar.gz
-mv linux-amd64/helm .bin/helm
+mv linux-amd64/helm bin/helm
 rm -fr linux-amd64
 rm -fr helm.tar.gz
-chmod +x .bin/helm
+chmod +x bin/helm
 python -m bash_kernel.install
 curl -sSL -o docker.tgz https://download.docker.com/linux/static/stable/x86_64/docker-20.10.18.tgz
 tar -xvf docker.tgz
-mv docker/docker .bin/docker
-chmod +x .bin/docker
+mv docker/docker bin/docker
+chmod +x bin/docker
 rm -fr docker
 rm -fr docker.tgz
