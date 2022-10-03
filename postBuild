@@ -1,6 +1,6 @@
 cd /opt
 mkdir bin
-curl -sSL -o .bin/kubectl https://dl.k8s.io/release/v1.25.0/bin/linux/amd64/kubectl
+curl -sSL -o bin/kubectl https://dl.k8s.io/release/v1.25.0/bin/linux/amd64/kubectl
 chmod +x bin/kubectl
 curl -sSL -o helm.tar.gz https://get.helm.sh/helm-v3.10.0-rc.1-linux-amd64.tar.gz
 tar -xvf helm.tar.gz
