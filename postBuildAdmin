@@ -1,2 +1,4 @@
-curl -LO https://quarto.org/download/latest/quarto-linux-amd64.deb && gdebi quarto-linux-amd64.deb && rm quarto-linux-amd64.deb
+cd /opt
+curl -LO https://quarto.org/download/latest/quarto-linux-amd64.deb
+gdebi quarto-linux-amd64.deb
 echo "hello"
