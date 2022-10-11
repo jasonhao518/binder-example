@@ -1,4 +1,0 @@
-channels:
-  - conda-forge
-dependencies:
-  - jupyterlab-blockly=0.2.1
